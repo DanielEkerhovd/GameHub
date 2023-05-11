@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    font-family: "Genos";
     box-sizing: border-box;
 }
 
@@ -13,9 +14,34 @@ body {
     
 }
 
+/* Header */
+
 header {
     width: 100%;
     height: 100px;
     background-color: #1B203A;
     border-bottom: 1px solid black;
+    display: flex;
+}
+
+header nav {
+    text-align: center;
+    background-color: red;
+    width: 20%;
+}
+
+.list-item li {
+    display: inline;
+}
+.list-item {
+    display: inline;
+}
+
+a.header-link:link, a.header-link:hover, a.header-link:active {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header img {
+    max-width: 200px;
 }
