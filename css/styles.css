@@ -9,7 +9,7 @@
 body {
     background-image:url(/images/universal-background.jpg) ;
     background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.696);
+    background-color: rgba(0, 0, 0, 0.836);
     object-fit: cover
     
 }
@@ -24,19 +24,6 @@ header {
     display: flex;
 }
 
-header nav {
-    text-align: center;
-    background-color: red;
-    width: 20%;
-}
-
-.list-item li {
-    display: inline;
-}
-.list-item {
-    display: inline;
-}
-
 a.header-link:link, a.header-link:hover, a.header-link:active {
     color:rgb(255, 255, 255);
     text-decoration: none;
@@ -44,4 +31,23 @@ a.header-link:link, a.header-link:hover, a.header-link:active {
 
 header img {
     max-width: 200px;
+}
+
+.navigation {
+    display: flex;
+    margin: auto 0;
+}
+
+.header-link {
+    display: flex;
+    padding: 0 20px;
+}
+
+.header-link p {
+    margin: 0 8px;
+    font-size: 20px;
+}
+
+.header-link i {
+    margin: auto;
 }
