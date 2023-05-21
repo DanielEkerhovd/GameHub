@@ -3,7 +3,6 @@
     padding: 0;
     color: white;
     font-family: "Genos";
-    box-sizing: border-box;
 }
 
 body {
@@ -22,15 +21,27 @@ header {
     background-color: #1B203A;
     border-bottom: 1px solid black;
     display: flex;
+    justify-content: center;
 }
 
+header > div {
+    margin: 0 200px;
+    background-color: ;
+}
 a.header-link:link, a.header-link:hover, a.header-link:active {
     color:rgb(255, 255, 255);
     text-decoration: none;
 }
 
-header img {
+.header-logo {
     max-width: 200px;
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 4px 80px 4px 80px;
+    box-sizing: content-box;
+    margin: 20;
+    
 }
 
 .navigation {
@@ -50,4 +61,17 @@ header img {
 
 .header-link i {
     margin: auto;
+}
+
+.filler {
+    width: 250px;
+    height: 40px;
+    background-color: red;
+    margin: auto 0;
+    display: flex;
+}
+
+.filler p {
+    text-align: center;
+    margin:auto;
 }
