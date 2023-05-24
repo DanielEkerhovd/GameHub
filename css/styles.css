@@ -21,13 +21,9 @@ header {
     background-color: #1B203A;
     border-bottom: 1px solid black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-header > div {
-    margin: 0 200px;
-    background-color: ;
-}
 a.header-link:link, a.header-link:hover, a.header-link:active {
     color:rgb(255, 255, 255);
     text-decoration: none;
@@ -40,11 +36,13 @@ a.header-link:link, a.header-link:hover, a.header-link:active {
     border: 1px solid #000000;
     border-radius: 4px 80px 4px 80px;
     box-sizing: content-box;
-    margin: 20;
+    position: absolute;
+    left: 45%;
+    top: 2%    
     
 }
 
-.navigation {
+header div {
     display: flex;
     margin: auto 0;
 }
