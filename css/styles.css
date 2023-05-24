@@ -13,7 +13,7 @@ body {
     
 }
 
-/* Header */
+/* Header start */
 
 header {
     width: 100%;
@@ -72,4 +72,10 @@ header div {
 .filler p {
     text-align: center;
     margin:auto;
+}
+
+/* Header end */
+
+.featured-gamecover {
+    max-width: 300px;
 }
