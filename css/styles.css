@@ -36,9 +36,6 @@ a.header-link:link, a.header-link:hover, a.header-link:active {
     border: 1px solid #000000;
     border-radius: 4px 80px 4px 80px;
     box-sizing: content-box;
-    position: absolute;
-    left: 45%;
-    top: 2%    
     
 }
 
@@ -78,4 +75,33 @@ header div {
 
 .featured-gamecover {
     max-width: 300px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sale-content {
+    min-width: 600px;
+    min-height: 500px;
+    background-color: red;
+}
+.sale-content h1 {
+    text-align: start;
+}
+
+.sale-games img {
+    display: flex;
+    flex-direction: row-revers;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 200px;
+    padding: 0 40p;
+}
+
+footer div, footer p {
+    margin: 20px auto;
+    text-align: center;
 }
