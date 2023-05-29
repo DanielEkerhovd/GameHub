@@ -9,7 +9,8 @@ body {
     background-image:url(/images/universal-background.jpg) ;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.836);
-    object-fit: cover
+    object-fit: cover;
+    background-attachment: fixed;
     
 }
 
@@ -22,6 +23,8 @@ header {
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-around;
+    position: sticky;
+    top: 0;
 }
 
 a.header-link:link, a.header-link:hover, a.header-link:active {
@@ -84,22 +87,34 @@ header div {
 }
 
 .sale-content {
-    min-width: 600px;
+    min-width: 1080px;
     min-height: 500px;
-    background-color: red;
 }
 .sale-content h1 {
     text-align: start;
+    min-width: 100%;
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+.sale-games {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 84px;
 }
 
 .sale-games img {
-    display: flex;
-    flex-direction: row-revers;
-    align-items: center;
-    flex-wrap: nowrap;
     width: 200px;
-    padding: 0 40p;
 }
+
+.featured-content {
+    min-width: 600px
+}
+
+
+
+
 
 footer div, footer p {
     margin: 20px auto;
