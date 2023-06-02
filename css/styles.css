@@ -25,6 +25,7 @@ header {
     justify-content: space-around;
     position: sticky;
     top: 0;
+    
 }
 
 a.header-link:link, a.header-link:hover, a.header-link:active {
@@ -33,16 +34,30 @@ a.header-link:link, a.header-link:hover, a.header-link:active {
 }
 
 .header-logo {
-    max-width: 200px;
-    display: flex;
     background: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 4px 80px 4px 80px;
-    box-sizing: content-box;
-    
+    width: 200px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+.header-logo-img {
+    height: 100px;
+    width: 158.84;
 }
 
-header div {
+.link-box {
+    margin-left: 59px;
+}
+
+.header-placeholder {
+}
+
+header div, header nav {
     display: flex;
     margin: auto 0;
 }
@@ -61,17 +76,45 @@ header div {
     margin: auto;
 }
 
-.filler {
-    width: 250px;
-    height: 40px;
-    background-color: red;
-    margin: auto 0;
+.header-searchbar {
+    height: 30px;
     display: flex;
+    align-items: center;
 }
 
-.filler p {
-    text-align: center;
-    margin:auto;
+.search-icon {
+    height: 36px;
+    width: 36px;
+    border-top-left-radius: 16px;
+    border: none;
+    background-color: #FFFFFF24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon:hover {
+    background-color:#ffffff5f;
+}
+.search-glass {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+.search-bar {
+    width: 257px;
+    height: 36px;
+    background-color: #FFFFFF24;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    margin-left: 3px;
+    border-bottom-right-radius: 16px;
+}
+
+.about-profile {
+    margin-left:20px ;
 }
 
 /* Header end */
@@ -90,24 +133,28 @@ header div {
 }
 
 .main-content- {
-    max-width: 1080px;
+    width: 1080px;
     min-height: 300px;
-    margin: 30px 0 ;
+    margin: 30px 0;
+
 }
 .main-content- h1 {
     text-align: start;
-    font-size: 40px;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 20px 0;
 }
 
-.sale-games {
+.sale-games, .new-games {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 84px;
 }
 
-.sale-games img {
+.sale-games img, .new-games img {
     width: 200px;
+    object-fit: cover;
     
 }
 
@@ -116,27 +163,31 @@ header div {
 }
 
 .featured-game-text {
-    display: flex;
-    background-color: red;
-    align-items: start;
-    flex-direction: column;
-    max-width: 780px;
     margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 .featured-game-text h1 {
     line-height: 16px;
     margin: 0 0 20px 0;
+    font-size: 37px;
 
 }
 .featured-game-text p{
-    font-size: 29px;
+    font-size: 26px;
     font-weight: 400;
+    max-width: 600px;
 }
 
 .video-placeholder {
-    height: 150px;
-    align-items: end;
+    height: 160px;
+    width: 250px;
+    object-fit: cover;
+    border: 1px solid rgb(102, 102, 102);
+    margin-top: 20px;
 
 }
 .featured-button {
@@ -168,10 +219,38 @@ header div {
     background-color: white;
 } 
 
+.newgames-navigation {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 200px;
+}
 
+.navigation-circle {
+    width: 25px;
+    height: 25px;
+    background-color: #1B203D;
+    border-radius: 100%;
+    border: 1px solid #ffffff0e;
+}
 
+.navigation-circle:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.footer-icons a img {
+    width: 30px;
+    margin: 0 3px;
+}
+
+footer{
+margin-bottom: 20px;
+margin-top: 30px;
+}
 
 footer div, footer p {
-    margin: 20px auto;
+    margin: 0 auto;
     text-align: center;
 }
