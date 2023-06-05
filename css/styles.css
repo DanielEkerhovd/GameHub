@@ -17,7 +17,7 @@ body {
 /* Header start */
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background-color: #1B203A;
     border-bottom: 1px solid black;
