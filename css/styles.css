@@ -17,14 +17,15 @@ body {
 /* Header start */
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 100px;
     background-color: #1B203A;
     border-bottom: 1px solid black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: sticky;
     top: 0;
+    z-index: 1;
     
 }
 
@@ -51,7 +52,7 @@ a.header-link:link, a.header-link:hover, a.header-link:active {
 }
 
 .link-box {
-    margin-left: 59px;
+    margin-left: 30px;
 }
 
 .header-placeholder {
@@ -119,6 +120,27 @@ header div, header nav {
 
 /* Header end */
 
+/* Footer start */
+
+.footer-icons a img {
+    width: 30px;
+    margin: 0 3px;
+}
+
+footer{
+margin-bottom: 20px;
+margin-top: 30px;
+}
+
+footer div, footer p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Footer end */
+
+/* index.html content*/
+
 .featured-gamecover {
     height: 400px;
     min-height: 200px;
@@ -158,6 +180,31 @@ header div, header nav {
     
 }
 
+.sale-game {
+    position: relative;
+}
+
+.saletag-homepage {
+    background: #c20000;
+    border: 1px solid #000000;
+    border-radius: 80px 4px 80px 4px;
+    width: 95px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 12%;
+    left: -24%
+}
+
+.saletag-homepage p {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
 .featured-game {
     display: flex;
 }
@@ -186,33 +233,34 @@ header div, header nav {
     height: 160px;
     width: 250px;
     object-fit: cover;
-    border: 1px solid rgb(102, 102, 102);
+    border: 1px solid rgb(21, 21, 21);
     margin-top: 20px;
 
 }
+
+/* BUTTON */
 .featured-button {
     display: flex;
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 700;
     gap: 20px;
     margin: 10px 0 0 0;
     display: flex;
     align-items: center;
+    
 }
 
 .featured-button button {
     background: rgba(255, 255, 255, 0.188);
     border-radius: 0px 10.68px;
-    width: 174px;
+    width: 194px;
     height: 46px;
     font-size: 28px;
     border: none;
 }
 
 .featured-button button:hover  {
-    border-bottom: #808080 solid 1px;
-    border-right: #808080 solid 1px;
-    box-sizing: content-box;
+    background-color: rgba(255, 255, 255, 0.374);
 }
 .featured-button button:active {
     color: black;
@@ -240,17 +288,52 @@ header div, header nav {
     background-color: rgb(255, 255, 255);
 }
 
-.footer-icons a img {
-    width: 30px;
-    margin: 0 3px;
+/*games content*/
+
+.gamespage-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 80px auto;
 }
 
-footer{
-margin-bottom: 20px;
-margin-top: 30px;
+.gp-moregames, .gp-placeholder {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.gamespage-content img {
+    width: 235px;
 }
 
-footer div, footer p {
-    margin: 0 auto;
-    text-align: center;
+.gp-button {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    gap: 20px;
+    margin: 3px 0 0 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
+
+.gp-button button {
+    background: rgba(255, 255, 255, 0.188);
+    border-radius: 0px 10.68px;
+    width: 130px;
+    height: 40px;
+    font-size: 24px;
+    border: none;
+}
+
+.gp-button button:hover  {
+    background-color: rgba(255, 255, 255, 0.374);
+}
+.gp-button button:active {
+    color: black;
+    background-color: white;
+} 
