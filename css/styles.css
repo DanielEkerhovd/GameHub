@@ -141,11 +141,7 @@ footer div, footer p {
 
 /* index.html content*/
 
-.featured-gamecover {
-    height: 400px;
-    min-height: 200px;
-    object-fit: cover;
-}
+
 
 .main-content {
     display: flex;
@@ -209,6 +205,11 @@ footer div, footer p {
     display: flex;
 }
 
+.featured-gamecover {
+    height: 400px;
+    min-height: 200px;
+    object-fit: cover;
+}
 .featured-game-text {
     margin: 0 40px;
     display: flex;
@@ -245,7 +246,6 @@ footer div, footer p {
     font-weight: 700;
     gap: 20px;
     margin: 10px 0 0 0;
-    display: flex;
     align-items: center;
     
 }
@@ -253,7 +253,7 @@ footer div, footer p {
 .featured-button button {
     background: rgba(255, 255, 255, 0.188);
     border-radius: 0px 10.68px;
-    width: 194px;
+    width: 170px;
     height: 46px;
     font-size: 28px;
     border: none;
@@ -293,26 +293,26 @@ footer div, footer p {
 .gamespage-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 100px 130px;
     justify-content: center;
     max-width: 1500px;
     margin: 80px auto;
 }
 
 .gp-moregames, .gp-placeholder {
-    width: 250px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
 }
 .gamespage-content img {
-    width: 235px;
+    width: 200px;
 }
 
 .gp-button {
     display: flex;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     gap: 20px;
     margin: 3px 0 0 0;
@@ -324,9 +324,9 @@ footer div, footer p {
 .gp-button button {
     background: rgba(255, 255, 255, 0.188);
     border-radius: 0px 10.68px;
-    width: 130px;
+    width: 100px;
     height: 40px;
-    font-size: 24px;
+    font-size: 18px;
     border: none;
 }
 
