@@ -1,0 +1,41 @@
+/* Gamepages */
+
+.cover-page {
+
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 190px;
+    display: flex;
+    justify-content: center;
+}
+
+.game-gamecover {
+    height: 400px;
+    width: 311px;
+    object-fit: cover; 
+}
+
+.game-text h1 {
+    font-size: 37px;
+}
+
+.game-text p {
+    font-size: 26px;
+    max-width: 600px;
+}
+
+.game-button {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0 0 0;
+}
+
+.game-button button {
+    width: 170px;
+    height: 46px;
+    font-size: 28px;
+}
+
+
+    
