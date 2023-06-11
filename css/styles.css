@@ -17,9 +17,9 @@ body {
 /* Header start */
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 100px;
-    background-color: #1B203A;
+    background: #1B203A;
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-evenly;
@@ -116,6 +116,13 @@ header div, header nav {
 
 .about-profile {
     margin-left:20px ;
+}
+
+@media (max-width: 1200px) {
+    .header-searchbar {
+        display: none;
+    }
+
 }
 
 /* Header end */
