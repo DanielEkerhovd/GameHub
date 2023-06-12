@@ -17,16 +17,20 @@ body {
 /* Header start */
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background: #1B203A;
     border-bottom: 1px solid black;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-around;
     position: sticky;
     top: 0;
     z-index: 1;
-    
+}
+
+.flex-1 {
+    flex: 1;
 }
 
 a.header-link:link, a.header-link:hover, a.header-link:active {
@@ -44,15 +48,24 @@ a.header-link:link, a.header-link:hover, a.header-link:active {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 10px;
+    top: 30px;
 }
 .header-logo-img {
     height: 100px;
     width: 158.84;
 }
 
-.link-box {
-    margin-left: 30px;
+.link-box, .searchnav {
+    display: flex;
+    justify-content: space-around;  
+    align-items: center; 
+}
+
+
+.header-phone-icon {
+    width: 50px;
+    min-width: 50px;
+    min-height: 50px;
 }
 
 .header-placeholder {
@@ -60,11 +73,11 @@ a.header-link:link, a.header-link:hover, a.header-link:active {
 
 header div, header nav {
     display: flex;
-    margin: auto 0;
 }
 
 .header-link {
     display: flex;
+    align-items: center;
     padding: 0 20px;
 }
 
@@ -77,10 +90,14 @@ header div, header nav {
     margin: auto;
 }
 
+.searchnav {
+    display: flex;
+}
+
 .header-searchbar {
     height: 30px;
     display: flex;
-    align-items: center;
+
 }
 
 .search-icon {
@@ -115,15 +132,24 @@ header div, header nav {
 }
 
 .about-profile {
-    margin-left:20px ;
+    margin-left:20px;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 1200px) {
     .header-searchbar {
         display: none;
     }
+    
+    .link-box {
+    }
 
 }
+
+
+
+
 
 /* Header end */
 
@@ -145,6 +171,59 @@ footer div, footer p {
 }
 
 /* Footer end */
+
+
+.footer-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: #1B203A;
+    border-top: 1px solid black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-phone a {
+    flex: 1;
+    text-align: center;
+}
+
+@media (min-width: 630px) {
+
+    .footer-phone, .header-phone {
+        display: none;
+    }
+}
+
+@media (max-width: 629px) {
+
+    .header-desktop, .footer-desktop {
+        display: none;
+    }
+
+    header {
+        height: 80px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Assets */
@@ -188,7 +267,8 @@ footer div, footer p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 400px;
+    width: 100%;
+    height: auto;
 }
 
 .gamecover-text > h1 {
@@ -211,10 +291,34 @@ footer div, footer p {
 }
 
 
+@media (max-width: 1080px) {
+    .video-placeholder {
+        display: none;
+    }
+
+    .gamecover-text {
+        justify-content: start;
+    }
+}
 
 
+@media (max-width: 1040px) {
 
+    .link-box p {
+        display: none;
+    }
 
+}
+
+@media (max-width: 902px) {
+    .gamecover-text {
+        display: none;
+    }
+
+    .gamecover-unit {
+        justify-content: center;
+    }
+}
 
 
 
