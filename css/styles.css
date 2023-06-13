@@ -295,7 +295,7 @@ footer div, footer p {
 }
 
 
-@media (max-width: 1080px) {
+@media (max-width: 1507px) {
     .video-placeholder {
         display: none;
     }
@@ -314,7 +314,7 @@ footer div, footer p {
 
 }
 
-@media (max-width: 902px) {
+@media (max-width: 1257px) {
     .gamecover-text {
         display: none;
     }

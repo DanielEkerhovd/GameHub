@@ -5,6 +5,7 @@
     align-items: start;
     margin-top: 200px;
     gap: 150px;
+    overflow: hidden;
 
 }
 
@@ -58,7 +59,7 @@
 }
 
 footer {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 @media (max-width: 1200px) {

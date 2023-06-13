@@ -9,9 +9,10 @@
 }
 
 .main-content- {
-    width: 70%;
+    width: 50%;
     min-height: 300px;
     margin: 20px 0;
+    
 
 }
 .main-content- > h1 {
@@ -25,14 +26,21 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow: scroll;
     /* Its suppose to scroll sideways with js*/
-    overflow: hidden;
     gap: 50px;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
     height: auto;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+    
 }
+
+.sale-games::-webkit-scrollbar, .new-games::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */  
+}
+
 
 .sale-games img, .new-games img {
     max-width: 200px;
@@ -54,8 +62,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 12%;
-    left: -24%
+    top: 9%;
+    left: 65%
 }
 
 .saletag-homepage p {
@@ -97,23 +105,30 @@
 .newgames-navigation {
     margin: 0 auto;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
-    max-width: 200px;
 }
 
-.navigation-circle {
-    width: 25px;
-    height: 25px;
-    background-color: #1B203D;
-    border-radius: 100%;
+.navigation-bar {
+    width: 70%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.188);
+    border-radius: 20px;
     border: 1px solid #ffffff0e;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
-.navigation-circle:hover {
-    background-color: rgb(255, 255, 255);
+.navigation-bar-inside {
+    height: 10px;
+    width: 20%;
+    background: #adadad;
+    border-radius: 0px 100px;
+    border: 1px solid rgba(255, 255, 255, 0.088)
 }
+
 
 
 @media (max-width: 1380px) {
@@ -121,4 +136,19 @@
         justify-content: start;
     }
     
+}
+
+@media (max-width: 629px) {
+    .newgames-navigation {
+        display: none;
+        
+    }
+
+    .main-content- {
+        width: 80%;
+    }
+
+    .main-content-:last-child {
+        margin-bottom: 100px;
+    }
 }
