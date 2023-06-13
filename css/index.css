@@ -3,6 +3,7 @@
 .main-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
 }
@@ -25,6 +26,8 @@
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: scroll;
+    /* Its suppose to scroll sideways with js*/
+    overflow: hidden;
     gap: 50px;
     justify-content: center;
     width: 100%;
@@ -110,4 +113,12 @@
 
 .navigation-circle:hover {
     background-color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 1380px) {
+    .sale-games, .new-games {
+        justify-content: start;
+    }
+    
 }

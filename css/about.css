@@ -9,11 +9,12 @@
 }
 
 .about-image {
-    width: 250px;
+    width: auto;
+    height: 40%;
     border-radius: 0 50px;
     border: solid 2px rgba(255, 255, 255, 0.066);
     position: absolute;
-    right: 1px;
+    left: 50%;
 }
 
 .about-content h1 {
@@ -34,17 +35,16 @@
 }
 
 .contact-text p {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .about-text, .contact-text {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     gap: 20px 0px;
-    max-width: 500px;
-    min-width: 500px;
+    width: 40%;
     position: relative;
 }
 
@@ -69,14 +69,32 @@ footer {
         margin: 100px 0;
     }
 
+    
+
+    .about-text, .contact-text {
+        width: 50%
+    }
+    
     footer {
         margin-top: 104px;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
     .about-text {
         align-self: start;
+    }
+}
+
+@media (max-width: 876px) {
+    .about-text, .contact-text {
+        width: 70%
+    }
+}
+
+@media (max-width: 629px) {
+    .about-image {
+        display: none;
     }
     
 }

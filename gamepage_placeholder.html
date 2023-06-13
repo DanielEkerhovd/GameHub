@@ -12,42 +12,55 @@
 </head>
 <body>
   <header>
-    <nav class="link-box">
-      <div>
-       <a href="index.html" class="header-link" alt="Link to homepage">
-          <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
-          <p>HOME</p>
-        </a>
-      </div>
-      <div>
-        <a href="games.html" class="header-link" alt="Link to games page">
-          <i class="fa-solid fa-gamepad fa-xl" style="color: #ffffff;"></i>
-          <p>GAMES</p>
-        </a>
-      </div>      
-      <div>
-        <a href="cart.html" class="header-link" alt="Link to cart">
-          <i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffffff;"></i> 
-          <p>CART</p>
-        </a>
-      </div>
+
+
+    <nav class="header-hamburger header-phone">
+      <a href=""><img src="Icons/menu.png" alt="Hamburger menu" class="header-phone-icon"></a>
     </nav>
-    <a href="index.html" alt="Link to homepage"><div class="header-logo">
+
+    <nav class="link-box flex-1 header-desktop">
+      <a href="index.html" class="header-link" alt="Link to homepage">
+        <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
+        <p>HOME</p>
+      </a>
+    
+      <a href="games.html" class="header-link" alt="Link to games page">
+        <i class="fa-solid fa-gamepad fa-xl" style="color: #ffffff;"></i>
+        <p>GAMES</p>
+      </a>
+    
+      <a href="cart.html" class="header-link" alt="Link to cart">
+        <i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffffff;"></i> 
+        <p>CART</p>
+      </a>
+      
+    </nav>
+
+    <a href="index.html" alt="Link to homepage"><div class="header-logo flex-1">
       <img src="images/GameHub - Logo.png" alt="GameHub Logo" class="header-logo-img">
     </div></a>
-    <div>
+
+    <div class="searchnav flex-1 header-desktop">
       <div class="header-searchbar">
-      <button class="search-icon">
+        <button class="search-icon">
           <img src="Icons/search.png" alt="search icon" class="search-glass">
-      </button>
-      <input type="text" placeholder="search" class="search-bar">
+        </button>
+        <input type="text" placeholder="search" class="search-bar">
       </div>
-    <nav class="about-profile">
-     <a href="profile.html" class="header-link" alt="Profile link"><i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i></a>
-     <a href="about.html" class="header-link" alt="About link"><i class="fa-regular fa-circle-question fa-2xl" style="color: #ffffff;"></i></a> 
+      <nav class="about-profile header-desktop">
+        <a href="about.html" class="header-link" alt="Profile link"><i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i></a>
+        <a href="about.html" class="header-link" alt="About link"><i class="fa-regular fa-circle-question fa-2xl" style="color: #ffffff;"></i></a> 
+      </nav>
+
+    </div>  
+
+    <nav class="header-game header-phone">
+      <a href="games.html"><img src="Icons/game-controller.png" alt="Game menu" class="header-phone-icon"></a>
     </nav>
-   </div>
-  </div> 
+
+    
+
+
   </header>  
       <div class="back-button">
         <a href="javascript:window.history.back()"> < Back to games </a>
@@ -66,5 +79,22 @@
           <img class="video-placeholder"src="images/video-placeholder.png" alt="video player">
         </div> 
       </div> 
+
+      <footer>
+        <div class="footer-desktop">
+          <div class="footer-icons">
+          <a href=""><img src="Icons/facebook.png" alt=""></a>
+          <a href=""><img src="Icons/instagram.png" alt=""></a>
+          <a href=""><img src="Icons/twitter.png" alt=""></a>
+        </div>
+        <p>GameHub universe ©2023 - All rights reserved</p>
+        </div>
+        
+        <nav class="footer-phone">
+          <a href="cart.html"><img src="Icons/shopping-basket.png" alt="Cart link"></a>
+          <a href="about.html" class="footer-link" alt="Profile link"><i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i></a>
+          <a href="about.html" class="footer-link" alt="About link"><i class="fa-regular fa-circle-question fa-2xl" style="color: #ffffff;"></i></a> 
+        </nav>
+      </footer>
 </body>
 </html>

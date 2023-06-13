@@ -29,7 +29,25 @@
 }
 
 .gp-button button {
-    width: 100px;
+    width: 110px;
     height: 35px;
     font-size: 18px;
+}
+
+.gp-games {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+@media (max-width: 629px){
+    .gamespage-content {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 458px) {
+   
+
 }

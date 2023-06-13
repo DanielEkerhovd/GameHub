@@ -5,8 +5,9 @@
     justify-content: center;
     align-items: center;
     margin: 100px 0;
-    gap: 0 100px;
-    vertical-align: center ;
+    gap: 100px;
+    flex-wrap: wrap;
+    
 }
 .cart-games img {
     width: 180px;
@@ -29,6 +30,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px 0;
+}
+
+.cart-inventory h1 {
+    font-size: 50px;
 }
 .cart-games {
     display: flex;
@@ -144,4 +149,52 @@
 .checkout-button button {
     height: 50px;
     width: 150px;
+}
+
+
+
+@media (max-width: 629px) {
+    .cart-text p:first-child {
+        display: none;
+    }
+    .cart-games {
+        width: 30vw;
+    }
+
+    .applepay, .googlepay {
+        width: 80vw;
+    }
+
+    .payment-details {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80vw;
+        gap: 5px 0;
+    }
+    
+    .payment-details input {
+        height: 50px;
+        color: black;
+        font-size: 25px;
+    }
+    
+    .payment-card, .payment-name {
+        width: 500px;
+    }
+    
+    .payment-cvc {
+        width: 150px;
+    }
+    
+    .payment-mm, .payment-yy {
+        width: 100px;
+    }
+    
+    .checkout {
+        display: flex;
+        width: 80vw;
+        justify-content: space-between;
+    }
 }

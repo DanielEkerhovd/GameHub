@@ -191,6 +191,10 @@ footer div, footer p {
     text-align: center;
 }
 
+.footer-phone img {
+    height: 35px;
+}
+
 @media (min-width: 630px) {
 
     .footer-phone, .header-phone {
