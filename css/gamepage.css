@@ -1,9 +1,7 @@
 /* Gamepages */
 
 .cover-page {
-
-    width: 1000px;
-    height: auto;
+    width: 60%;
     margin: 0 auto;
     margin-top: 190px;
     display: flex;
@@ -15,14 +13,16 @@
     width: 311px;
     object-fit: cover; 
 }
-
+.game-text {
+    min-width: 396px;
+    max-width: 510px;
+}
 .game-text h1 {
     font-size: 37px;
 }
 
 .game-text p {
     font-size: 26px;
-    max-width: 600px;
 }
 
 .game-button {
@@ -36,6 +36,86 @@
     height: 46px;
     font-size: 28px;
 }
+
+.footer-desktop {
+    display: none;
+}
+
+.gamepage-phone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.gamepage-phone img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    object-position: 50% 85%;
+}
+
+.gamepage-phone-text {
+    display: flex;
+    width: 80%;
+
+}
+
+.gamepage-phone-buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.gamepage-phone-buy h2 {
+    font-size: 35px;
+}
+
+.gamepage-phone-text p {
+    font-size: 4vw;
+}
+
+.gamepage-phone-buy button {
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+}
+
+.game-icon {
+    display:none;
+}
+
+@media (max-width: 855px) {
+    .video-placeholder {
+        display: none;
+    }
+
+    .game-text {
+        justify-content: start;
+        min-width: 280px;
+
+    }
+    
+}
+
+@media (min-width: 630px){
+    .gamepage-phone {
+        display: none;
+    }
+}
+
+@media (max-width: 629px) {
+    .cover-page, .back-button {
+        display: none;
+    }
+    
+}
+
 
 
     

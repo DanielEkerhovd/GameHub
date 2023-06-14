@@ -66,7 +66,9 @@
 	outline: inherit;
 }
 
-
+span {
+    font-weight: 900;
+}
 
 
 .cart-payment {
@@ -88,19 +90,30 @@
     gap: 10px;
 }
 
+.apple-google-pay img {
+    width: 60px;
+}
+
 .applepay, .googlepay {
     width: 500px;
     height: 50px;
     border-radius: 10px;
-    background-color: red;
+    background: rgba(255, 255, 255, 0.188);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(73, 73, 73);
+
 }
+
+
 .payment-details {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 500px;
-    gap: 5px 0;
+    gap: 5px 20px;
 }
 
 .payment-details > p {
@@ -119,10 +132,12 @@
 
 .payment-cvc {
     width: 150px;
+    flex: 2;
 }
 
 .payment-mm, .payment-yy {
     width: 100px;
+    flex: 1;
 }
 
 .checkout {
@@ -134,13 +149,14 @@
 .cart-total {
     background: rgba(255, 255, 255, 0.188);
     border-radius: 0px 10.68px;
-    width: 200px;
+    width: 40%;
     height: 50px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 00;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .checkout-button {
@@ -149,6 +165,7 @@
 .checkout-button button {
     height: 50px;
     width: 150px;
+    font-size: 25px;
 }
 
 
@@ -158,7 +175,22 @@
         display: none;
     }
     .cart-games {
-        width: 30vw;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cart-inventory h1 {
+        text-align: center;
+    }
+
+    .cart-text {
+        width: 180px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .cart-inventory {
+        gap: 30px;
     }
 
     .applepay, .googlepay {
@@ -171,7 +203,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         width: 80vw;
-        gap: 5px 0;
+
     }
     
     .payment-details input {
@@ -197,4 +229,7 @@
         width: 80vw;
         justify-content: space-between;
     }
+}
+
+@media (max-width: 453px) {
 }

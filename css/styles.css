@@ -3,6 +3,7 @@
     padding: 0;
     color: white;
     font-family: "Genos";
+
 }
 
 body {
@@ -195,6 +196,14 @@ footer div, footer p {
     height: 35px;
 }
 
+@media (max-width: 1040px) {
+
+    .link-box p {
+        display: none;
+    }
+
+}
+
 @media (min-width: 630px) {
 
     .footer-phone, .header-phone {
@@ -295,34 +304,7 @@ footer div, footer p {
 }
 
 
-@media (max-width: 1507px) {
-    .video-placeholder {
-        display: none;
-    }
 
-    .gamecover-text {
-        justify-content: start;
-    }
-}
-
-
-@media (max-width: 1040px) {
-
-    .link-box p {
-        display: none;
-    }
-
-}
-
-@media (max-width: 1257px) {
-    .gamecover-text {
-        display: none;
-    }
-
-    .gamecover-unit {
-        justify-content: center;
-    }
-}
 
 
 
