@@ -5,8 +5,6 @@ main {
     justify-content: center;
 }
 
-
-
 .checkout {
     display: flex;
     flex-wrap: wrap;
@@ -38,10 +36,7 @@ main {
     width: 250px;
     height: 80px;
     font-size: 25px;
-    font-weight: ;
 }
-
-
 
 .checkout img {
     width: 50%;

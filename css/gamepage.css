@@ -96,16 +96,10 @@
         display: none;
     }
 
-    .gamecover img {
-        
-    }
-
     .game-text {
         justify-content: start;
         min-width: 280px;
-
     }
-    
 }
 
 @media (min-width: 630px){
@@ -117,8 +111,7 @@
 @media (max-width: 629px) {
     .cover-page, .back-button {
         display: none;
-    }
-    
+    }   
 }
 
 

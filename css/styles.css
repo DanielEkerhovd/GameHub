@@ -69,9 +69,6 @@ a.header-link:link, a.header-link:hover, a.header-link:active {
     min-height: 50px;
 }
 
-.header-placeholder {
-}
-
 header div, header nav {
     display: flex;
 }
@@ -148,12 +145,6 @@ header div, header nav {
 
 }
 
-
-
-
-
-/* Header end */
-
 /* Footer start */
 
 .footer-icons a img {
@@ -170,9 +161,6 @@ footer div, footer p {
     margin: 0 auto;
     text-align: center;
 }
-
-/* Footer end */
-
 
 .footer-phone {
     display: flex;
@@ -225,20 +213,6 @@ footer div, footer p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Assets */
 
 /*BUTTONSTYLE - just add class + width styling*/
@@ -261,8 +235,6 @@ footer div, footer p {
     color: black;
     background-color: white;
 } 
-
-
 
 /* Gamecover */
 
