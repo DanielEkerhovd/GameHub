@@ -28,14 +28,12 @@
     flex-wrap: nowrap;
     /* Its suppose to scroll sideways with js*/
     gap: 50px;
-    justify-content: start;
-    width: 100%;
-    height: auto;
+    justify-content: center;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     overflow-y: scroll;
-    
 }
+
 
 .sale-games::-webkit-scrollbar, .new-games::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */  
@@ -131,7 +129,7 @@
 
 
 
-@media (max-width: 1380px) {
+@media (max-width: 1920px) {
     .sale-games, .new-games {
         justify-content: start;
     }

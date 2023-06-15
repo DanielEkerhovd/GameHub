@@ -6,6 +6,7 @@
     margin-top: 190px;
     display: flex;
     justify-content: center;
+    max-width: 986px;
 }
 
 .game-gamecover {
@@ -93,6 +94,10 @@
 @media (max-width: 855px) {
     .video-placeholder {
         display: none;
+    }
+
+    .gamecover img {
+        
     }
 
     .game-text {
