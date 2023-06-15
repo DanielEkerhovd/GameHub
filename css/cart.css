@@ -116,7 +116,7 @@ span {
     gap: 5px 20px;
 }
 
-.payment-details > p {
+.payment-details label {
     font-size: 25px;
 }
 
