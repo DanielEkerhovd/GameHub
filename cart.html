@@ -89,17 +89,18 @@
           <p>OR</p>
           <div class="payment-details">
             <p>Payment details</p>
-            <input type="text" name="" id="Card" placeholder="Card number" class="payment-card">
-            <input type="text" name="" id="cardholder" placeholder="Cardholder name" class="payment-name">
-            <input type="number" name="" id="MM" placeholder="MM" class="payment-mm">
-            <input type="number" name="" id="YY" placeholder="YY" class="payment-yy">
-            <input type="number" name="" id="CVC" placeholder="CVC" class="payment-cvc">
+            <input type="text" name="card" id="card" placeholder="Card number" class="payment-card">
+            <input type="text" name="cardholder" id="cardholder" placeholder="Cardholder name" class="payment-name">
+            <input type="number" name="mm" id="mm" placeholder="MM" class="payment-mm">
+            <input type="number" name="yy" id="yy" placeholder="YY" class="payment-yy">
+            <input type="number" name="cvc" id="cvc" placeholder="CVC" class="payment-cvc">
           </div>
           <div class="checkout">
             <div class="cart-total">
               <p>Subtotal: <span>70.00$</span></p>
             </div>
             <div class="checkout-button buttonstyle">
+              <!-- The button is suppose to open the success page. Using anchor tag for now.-->
               <a href="cart_checkout.html"><button type="submit" class="">Checkout</button></a>
             </div>
           </div>
