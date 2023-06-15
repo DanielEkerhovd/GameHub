@@ -1,143 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/cart.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Genos' rel='stylesheet'>
-    <script src="https://kit.fontawesome.com/7b521c5948.js" crossorigin="anonymous"></script>
-    <title>Cart</title>
-</head>
-<body>
-  <header>
-
-
-    <nav class="header-hamburger header-phone">
-      <a href=""><img src="Icons/menu.png" alt="Hamburger menu" class="header-phone-icon"></a>
-    </nav>
-
-    <nav class="link-box flex-1 header-desktop">
-      <a href="index.html" class="header-link" alt="Link to homepage">
-        <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
-        <p>HOME</p>
-      </a>
-    
-      <a href="games.html" class="header-link" alt="Link to games page">
-        <i class="fa-solid fa-gamepad fa-xl" style="color: #ffffff;"></i>
-        <p>GAMES</p>
-      </a>
-    
-      <a href="cart.html" class="header-link" alt="Link to cart">
-        <i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffffff;"></i> 
-        <p>CART</p>
-      </a>
-      
-    </nav>
-
-    <a href="index.html" alt="Link to homepage"><div class="header-logo flex-1">
-      <img src="images/GameHub - Logo.png" alt="GameHub Logo" class="header-logo-img">
-    </div></a>
-
-    <div class="searchnav flex-1 header-desktop">
-      <div class="header-searchbar">
-        <button class="search-icon">
-          <img src="Icons/search.png" alt="search icon" class="search-glass">
-        </button>
-        <input type="text" placeholder="search" class="search-bar">
-      </div>
-      <nav class="about-profile header-desktop">
-        <a href="about.html" class="header-link" alt="Profile link"><i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i></a>
-        <a href="about.html" class="header-link" alt="About link"><i class="fa-regular fa-circle-question fa-2xl" style="color: #ffffff;"></i></a> 
+  <head>
+      <meta charset="UTF-8">
+      <meta name="author" content="Daniel Ekerhovd">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Cart inventory">
+      <meta name="keywords" content="HTML, CSS">
+      <link href="css/styles.css" rel="stylesheet">
+      <link href="css/cart.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Genos' rel='stylesheet'>
+      <script src="https://kit.fontawesome.com/7b521c5948.js" crossorigin="anonymous"></script>
+      <title>GameHub - Cart</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header-hamburger header-phone">
+        <a href=""><img src="Icons/menu.png" alt="Hamburger menu" class="header-phone-icon"></a>
       </nav>
-
-    </div>  
-
-    <nav class="header-game header-phone">
-      <a href="games.html"><img src="Icons/game-controller.png" alt="Game menu" class="header-phone-icon"></a>
-    </nav>
-
-    
-
-
-  </header>  
-      
+      <nav class="link-box flex-1 header-desktop">
+        <a href="index.html" class="header-link" alt="Link to homepage">
+          <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
+          <p>HOME</p>
+        </a>
+        <a href="games.html" class="header-link" alt="Link to games page">
+          <i class="fa-solid fa-gamepad fa-xl" style="color: #ffffff;"></i>
+          <p>GAMES</p>
+        </a>
+        <a href="cart.html" class="header-link" alt="Link to cart">
+          <i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffffff;"></i> 
+          <p>CART</p>
+        </a>
+      </nav>
+      <a href="index.html" alt="Link to homepage"><div class="header-logo flex-1">
+        <img src="images/GameHub - Logo.png" alt="GameHub Logo" class="header-logo-img">
+      </div></a>
+      <div class="searchnav flex-1 header-desktop">
+        <div class="header-searchbar">
+          <button class="search-icon">
+            <img src="Icons/search.png" alt="search icon" class="search-glass">
+          </button>
+          <input type="text" placeholder="search" class="search-bar">
+        </div>
+        <nav class="about-profile header-desktop">
+          <a href="about.html" class="header-link" alt="Profile link"><i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i></a>
+          <a href="about.html" class="header-link" alt="About link"><i class="fa-regular fa-circle-question fa-2xl" style="color: #ffffff;"></i></a> 
+        </nav>
+      </div>  
+      <nav class="header-game header-phone">
+        <a href="games.html"><img src="Icons/game-controller.png" alt="Game menu" class="header-phone-icon"></a>
+      </nav>
+    </header>   
+    <main>
       <div class="cart">
-        
         <div class="cart-content">  
-            <div class="cart-inventory">
-              <h1>CART</h1>
-                <div class="cart-games">
-                    <img src="images/GameHub - Assassin.jpg" alt="Assassin Gamecover - Cart">
-                    <div class="cart-text">
-                      <p>ASSASSIN</p>
-                      <p>35.00$</p>
-                      <div class="remove-button"><button><i class="fa-regular fa-square-minus fa-xl" style="color: #ffffff;"></i></button></div>
-                    </div>
-                    
-                </div>
-                <div class="cart-games">
-                  <img src="images/GameHub - Black.jpg" alt="Black Gamecover - Cart">
-                  <div class="cart-text">
-                    <p>Black</p>
-                    <p>35.00$</p>
-                    <div class="remove-button"><button><i class="fa-regular fa-square-minus fa-xl" style="color: #ffffff;"></i></button></div>
-                  </div>
-                  
+          <div class="cart-inventory">
+            <h1>CART</h1>
+            <div class="cart-games">
+              <img src="images/GameHub - Assassin.jpg" alt="Assassin Gamecover - Cart">
+              <div class="cart-text">
+                <p>ASSASSIN</p>
+                <p>35.00$</p>
+                <div class="remove-button"><button><i class="fa-regular fa-square-minus fa-xl" style="color: #ffffff;"></i></button></div>
               </div>
-                
             </div>
-            
+            <div class="cart-games">
+              <img src="images/GameHub - Black.jpg" alt="Black Gamecover - Cart">
+              <div class="cart-text">
+                <p>Black</p>
+                <p>35.00$</p>
+                <div class="remove-button"><button><i class="fa-regular fa-square-minus fa-xl" style="color: #ffffff;"></i></button></div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="cart-payment">
-            <div class="apple-google-pay">
-              <a href="applepay"><div class="applepay">
-                <img src="Icons/apple-pay.png" alt="">
-              </div></a>
-              <a href="googlepay"><div class="googlepay">
-                <img src="Icons/google-pay.png" alt="">
-              </div></a>
+          <div class="apple-google-pay">
+            <a href="applepay"><div class="applepay">
+              <img src="Icons/apple-pay.png" alt="">
+            </div></a>
+            <a href="googlepay"><div class="googlepay">
+              <img src="Icons/google-pay.png" alt="">
+            </div></a>
+          </div>
+          <p>OR</p>
+          <div class="payment-details">
+            <p>Payment details</p>
+            <input type="text" name="" id="Card" placeholder="Card number" class="payment-card">
+            <input type="text" name="" id="cardholder" placeholder="Cardholder name" class="payment-name">
+            <input type="number" name="" id="MM" placeholder="MM" class="payment-mm">
+            <input type="number" name="" id="YY" placeholder="YY" class="payment-yy">
+            <input type="number" name="" id="CVC" placeholder="CVC" class="payment-cvc">
+          </div>
+          <div class="checkout">
+            <div class="cart-total">
+              <p>Subtotal: <span>70.00$</span></p>
             </div>
-            <p>OR</p>
-            <div class="payment-details">
-                <p>Payment details</p>
-                <input type="text" name="" id="Card" placeholder="Card number" class="payment-card">
-                <input type="text" name="" id="cardholder" placeholder="Cardholder name" class="payment-name">
-                <input type="number" name="" id="MM" placeholder="MM" class="payment-mm">
-                <input type="number" name="" id="YY" placeholder="YY" class="payment-yy">
-                <input type="number" name="" id="CVC" placeholder="CVC" class="payment-cvc">
-                
+            <div class="checkout-button buttonstyle">
+              <a href="cart_checkout.html"><button type="submit" class="">Checkout</button></a>
             </div>
-              <div class="checkout">
-                <div class="cart-total">
-                  <p>Subtotal: <span>70.00$</span></p>
-                </div>
-                <div class="checkout-button buttonstyle">
-                  <a href="cart_checkout.html"><button type="submit" class="">Checkout</button></a>
-                </div>
-            </div>
-            
-            
+          </div>
         </div>
       </div>
-
-      <footer>
-        <div class="footer-desktop">
-          <div class="footer-icons">
-          <a href=""><img src="Icons/facebook.png" alt=""></a>
-          <a href=""><img src="Icons/instagram.png" alt=""></a>
-          <a href=""><img src="Icons/twitter.png" alt=""></a>
-        </div>
-        <p>GameHub universe ©2023 - All rights reserved</p>
-        </div>
-        
-        <nav class="footer-phone">
-          <a href="cart.html"><img src="Icons/shopping-basket.png" alt="Cart link"></a>
-          <a href="about.html" class="footer-link" alt="Profile link"><i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i></a>
-          <a href="about.html" class="footer-link" alt="About link"><i class="fa-regular fa-circle-question fa-2xl" style="color: #ffffff;"></i></a> 
-        </nav>
-      </footer>
-    
-</body>
+    </main>
+    <footer>
+      <div class="footer-desktop">
+        <div class="footer-icons">
+        <a href=""><img src="Icons/facebook.png" alt=""></a>
+        <a href=""><img src="Icons/instagram.png" alt=""></a>
+        <a href=""><img src="Icons/twitter.png" alt=""></a>
+      </div>
+      <p>GameHub universe ©2023 - All rights reserved</p>
+      </div>
+      
+      <nav class="footer-phone">
+        <a href="cart.html"><img src="Icons/shopping-basket.png" alt="Cart link"></a>
+        <a href="about.html" class="footer-link" alt="Profile link"><i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i></a>
+        <a href="about.html" class="footer-link" alt="About link"><i class="fa-regular fa-circle-question fa-2xl" style="color: #ffffff;"></i></a> 
+      </nav>
+    </footer>
+  </body>
 </html>
