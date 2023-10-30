@@ -2,7 +2,7 @@ export const saleGamesHTML = document.querySelector(".sale-games");
 
 export function createSaleGamesHTML(api) {
 
-
+  saleGamesHTML.innerHTML = ""
 
   for (let i = 0; i < api.length; i++) {
 
@@ -11,8 +11,6 @@ export function createSaleGamesHTML(api) {
     }
 
     let percentSale = parseInt((api[i].price - api[i].discountedPrice) / api[i].price * 100) + "%"
-
-    console.log(percentSale);
 
     saleGamesHTML.innerHTML += `
     <div class="sale-game">

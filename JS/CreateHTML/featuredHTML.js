@@ -4,6 +4,8 @@ export const featuredGameHTML = document.querySelector(".featured-content");
 
 export function createFeaturedHTML(api) {
 
+    featuredGameHTML.innerHTML = "";
+
     let pricing = api.price
     let saleColor = ""
 
