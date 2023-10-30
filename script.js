@@ -12,7 +12,7 @@ if (currentHTML == "/games"){
     createGamesHTML(dataAPI);
 }
 
-if (currentHTML == "/gamepage_placeholder") {
+if (currentHTML == "/gamepage_placeholder.html") {
 
         const id = getID();
     
