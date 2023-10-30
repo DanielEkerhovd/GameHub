@@ -8,12 +8,11 @@ import { createNewReleasesHTML, newRealeasesHTML } from "./JS/CreateHTML/newreal
 
 const currentHTML = window.location.pathname; 
 
-if (currentHTML == "/games.html"){
+if (currentHTML == "/games"){
     createGamesHTML(dataAPI);
 }
 
-
-if (currentHTML == "/gamepage_placeholder.html") {
+if (currentHTML == "/gamepage_placeholder") {
 
         const id = getID();
     
@@ -25,13 +24,10 @@ if (currentHTML == "/gamepage_placeholder.html") {
     
 };
 
-if (currentHTML == "/index.html") {
+if (currentHTML == "/index") {
 
     createSaleGamesHTML(dataAPI);
     createFeaturedHTML(featuredDataAPI);
     createNewReleasesHTML(dataAPI);
-
-
-    
 
 };
