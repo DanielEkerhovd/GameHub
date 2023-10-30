@@ -1,38 +1,53 @@
-const gamepageContentHTML = document.querySelector(".gamespage-content");
-const gameAPI = "https://api.noroff.dev/api/v1/gamehub";
+import { gamepageHTML, createGamesHTML } from "./JS/CreateHTML/gamesHTML.js";
+import { createProductHTML, productHTML } from "./JS/CreateHTML/productHTML.js";
+import { gameAPI, callAPI, dataAPI } from "./JS/functions/apicall.js";
+import { getID } from "./JS/functions/GetID.js";
+import { createFeaturedHTML, featuredGameHTML } from "./JS/CreateHTML/featuredHTML.js";
+import { createSaleGamesHTML, saleGamesHTML } from "./JS/CreateHTML/frontsaleHTML.js";
 
+const currentHTML = window.location.pathname; 
 
-async function fetchGames() {
-
-    const response = await fetch(gameAPI);
-    const data = await response.json();
-
-    for (let i = 0; i < data.length; i++) {
-
-        let pricing = data[i].price
-        let saleColor = ""
-
-        if (data[i].onSale) {
-            pricing = data[i].discountedPrice
-            saleColor = "onSale";
-        }
-
-        gamepageContentHTML.innerHTML += `  <div class="gp-games">
-                                                <a href="gamepage_placeholder.html">
-                                                    <img src="${data[i].image}" alt="${data[i].title}">
-                                                </a>
-                                                <div class="gp-button buttonstyle">
-                                                    <h2 class="${saleColor}">${pricing}$</h2>
-                                                    <button>Add to cart</button>
-                                                </div>
-                                            </div>`
-    }
-
-    gamepageContentHTML.innerHTML += `<div class="gp-moregames">
-    <p>More games comming soon</p>
-    </div>
-    <div class="gp-placeholder">
-    </div>`
+if (currentHTML == "/games.html"){
+    createGamesHTML(dataAPI);
 }
 
-fetchGames();
+
+if (currentHTML == "/gamepage_placeholder.html") {
+
+        const id = getID();
+    
+        const parameterID = gameAPI + id;
+    
+        const productAPI = await callAPI(parameterID);
+    
+        createProductHTML(productAPI);
+    
+};
+
+if (currentHTML == "/index.html") {
+
+    function saleGames() {
+
+    createSaleGamesHTML(dataAPI);
+
+    };
+
+    
+
+    console.log(saleGamesHTML);
+
+    async function featuredGame() {
+
+        const featuredID = "2bbaab8b-57b0-47f6-ab8d-8d443ac767da";
+
+        const featuredGameAPI = gameAPI + featuredID;
+
+        const featuredGameData = await callAPI(featuredGameAPI);
+
+        createFeaturedHTML(featuredGameData);
+    };
+
+    saleGames();
+    featuredGame();
+
+};

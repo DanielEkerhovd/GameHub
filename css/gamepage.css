@@ -92,26 +92,11 @@
 }
 
 @media (max-width: 855px) {
-    .video-placeholder {
-        display: none;
-    }
 
     .game-text {
         justify-content: start;
         min-width: 280px;
     }
-}
-
-@media (min-width: 630px){
-    .gamepage-phone {
-        display: none;
-    }
-}
-
-@media (max-width: 629px) {
-    .cover-page, .back-button {
-        display: none;
-    }   
 }
 
 
