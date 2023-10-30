@@ -24,7 +24,7 @@ if (currentHTML == "/gamepage_placeholder") {
     
 };
 
-if (currentHTML == "/index") {
+if (currentHTML == "/") {
 
     createSaleGamesHTML(dataAPI);
     createFeaturedHTML(featuredDataAPI);
