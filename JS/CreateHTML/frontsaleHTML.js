@@ -10,7 +10,7 @@ export function createSaleGamesHTML(api) {
       continue;
     }
 
-    let percentSale = parseInt((api[i].price - api[i].discountedPrice) / api[i].price * 100) + "%"
+    let percentSale = parseInt((api[i].price - api[i].discountedPrice) / api[i].price * 100) + "%";
 
     saleGamesHTML.innerHTML += `
     <div class="sale-game">
