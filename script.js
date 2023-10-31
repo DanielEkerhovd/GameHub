@@ -9,25 +9,25 @@ import { createNewReleasesHTML, newRealeasesHTML } from "./JS/CreateHTML/newreal
 const currentHTML = window.location.pathname; 
 
 if (currentHTML == "/games"){
-    createGamesHTML(dataAPI);
+     createGamesHTML(dataAPI);
 }
 
 if (currentHTML == "/gamepage_placeholder.html") {
 
-        const id = getID();
-    
-        const parameterID = gameAPI + id;
-    
-        const productAPI = await callAPI(parameterID);
-    
-        createProductHTML(productAPI);
-    
+    const id = getID();
+    const parameterID = gameAPI + id;
+    const productAPI = await callAPI(parameterID);
+
+    createProductHTML(productAPI);
+
 };
 
 if (currentHTML == "/") {
 
-    createSaleGamesHTML(dataAPI);
-    createFeaturedHTML(featuredDataAPI);
-    createNewReleasesHTML(dataAPI);
+createSaleGamesHTML(dataAPI);
+createFeaturedHTML(featuredDataAPI);
+createNewReleasesHTML(dataAPI);
 
 };
+
+

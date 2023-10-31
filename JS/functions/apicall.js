@@ -7,12 +7,10 @@ export async function callAPI(url) {
     const response = await fetch(url);
     const data = await response.json();
     return data;
-}
+};
 
 const featuredGameAPI = gameAPI + featuredID;
 
-export const featuredDataAPI = await callAPI(featuredGameAPI)
+export const featuredDataAPI = await callAPI(featuredGameAPI);
 
 export const dataAPI = await callAPI(gameAPI);
-
-

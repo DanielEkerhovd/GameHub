@@ -1,6 +1,10 @@
+import { errorMessage } from "../functions/errorHandling.js";
+
 export const gamepageHTML = document.querySelector(".gamespage-content");
 
 export function createGamesHTML(api) {
+
+    try {
 
     gamepageHTML.innerHTML = "";
 
@@ -13,6 +17,8 @@ export function createGamesHTML(api) {
             pricing = api[i].discountedPrice
             saleColor = "onSale";
         }
+
+
 
         gamepageHTML.innerHTML += `  <div class="gp-games">
                                                 <a href="/gamepage_placeholder.html?id=${api[i].id}">
@@ -30,4 +36,8 @@ export function createGamesHTML(api) {
     </div>
     <div class="gp-placeholder">
     </div>`
+
+    } catch (error) {
+        gamepageHTML.innerHTML = errorMessage("Couldn't load games");
+    }
 }

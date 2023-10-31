@@ -1,6 +1,9 @@
+import { errorMessage } from "../functions/errorHandling.js";
 export const newRealeasesHTML = document.querySelector(".new-games");
 
 export function createNewReleasesHTML(api) {
+
+  try {
 
     newRealeasesHTML.innerHTML = ""
 
@@ -18,5 +21,8 @@ export function createNewReleasesHTML(api) {
             <img src="${api[i].image}" alt="${api[i].title}">
         </a>
       `
-      }
+      } 
+    } catch (error) {
+      newRealeasesHTML.innerHTML = errorMessage();
+  }
 };

@@ -342,6 +342,11 @@ footer div, footer p {
       transform: translate(24px, 0);
     }
   }
+
+  .error {
+    font-size: 30px;
+    color: white;
+  }
   
 
 

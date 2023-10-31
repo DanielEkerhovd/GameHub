@@ -1,8 +1,9 @@
-
+import { errorMessage } from "../functions/errorHandling.js";
 export const featuredGameHTML = document.querySelector(".featured-content");
 
-
 export function createFeaturedHTML(api) {
+
+    try {
 
     featuredGameHTML.innerHTML = "";
 
@@ -30,6 +31,9 @@ export function createFeaturedHTML(api) {
             </div> 
     </div> 
     `
+    } catch (error) {
+        featuredGameHTML.innerHTML = errorMessage();
+    }
 };
 
 

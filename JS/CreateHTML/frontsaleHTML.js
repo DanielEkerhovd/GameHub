@@ -1,7 +1,10 @@
+import { errorMessage } from "../functions/errorHandling.js";
+
 export const saleGamesHTML = document.querySelector(".sale-games");
 
 export function createSaleGamesHTML(api) {
 
+  try {
   saleGamesHTML.innerHTML = ""
 
   for (let i = 0; i < api.length; i++) {
@@ -22,5 +25,8 @@ export function createSaleGamesHTML(api) {
       </a> 
     </div>
   `
+  }
+  } catch (error) {
+    saleGamesHTML.innerHTML = errorMessage("Error: Couldn't load discounted games");
   }
 };
