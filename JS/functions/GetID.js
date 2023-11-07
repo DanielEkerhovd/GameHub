@@ -5,7 +5,3 @@ export function getID() {
     const id = parameter.get("id");
     return id;
 };
-
-
-
-

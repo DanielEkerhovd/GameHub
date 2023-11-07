@@ -29,5 +29,3 @@ createFeaturedHTML(featuredDataAPI);
 createNewReleasesHTML(dataAPI);
 
 };
-
-

@@ -1,4 +1,5 @@
 import { errorMessage } from "../functions/errorHandling.js";
+
 export const productHTML = document.querySelector(".cover-page");
 
 export function createProductHTML(api) {

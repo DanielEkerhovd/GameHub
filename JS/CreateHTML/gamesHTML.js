@@ -40,4 +40,4 @@ export function createGamesHTML(api) {
     } catch (error) {
         gamepageHTML.innerHTML = errorMessage("Couldn't load games");
     }
-}
+};
