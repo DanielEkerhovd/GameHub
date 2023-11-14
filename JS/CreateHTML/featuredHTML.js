@@ -1,4 +1,4 @@
-import { errorMessage } from "../functions/errorHandling.js";
+import { errorMessage } from "../utils/errorHandling.js";
 export const featuredGameHTML = document.querySelector(".featured-content");
 
 export function createFeaturedHTML(api) {

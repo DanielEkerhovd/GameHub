@@ -1,4 +1,4 @@
-import { errorMessage } from "../functions/errorHandling.js";
+import { errorMessage } from "../utils/errorHandling.js";
 
 export const saleGamesHTML = document.querySelector(".sale-games");
 

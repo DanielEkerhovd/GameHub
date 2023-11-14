@@ -1,4 +1,4 @@
-import { errorMessage } from "../functions/errorHandling.js";
+import { errorMessage } from "../utils/errorHandling.js";
 
 export const gamepageHTML = document.querySelector(".gamespage-content");
 
@@ -26,7 +26,7 @@ export function createGamesHTML(api) {
                                                 </a>
                                                 <div class="gp-button buttonstyle">
                                                     <h2 class="${saleColor}">${pricing}$</h2>
-                                                    <button>Add to cart</button>
+                                                    <button type="button" class="cartButton" id="addCart">Add to cart</button>
                                                 </div>
                                             </div>`
     }

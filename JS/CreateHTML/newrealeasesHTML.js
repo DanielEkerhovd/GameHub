@@ -1,4 +1,4 @@
-import { errorMessage } from "../functions/errorHandling.js";
+import { errorMessage } from "../utils/errorHandling.js";
 export const newRealeasesHTML = document.querySelector(".new-games");
 
 export function createNewReleasesHTML(api) {
