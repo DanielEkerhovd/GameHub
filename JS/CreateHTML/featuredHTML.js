@@ -7,8 +7,8 @@ export function createFeaturedHTML(api) {
 
     featuredGameHTML.innerHTML = "";
 
-    let pricing = api.price
-    let saleColor = ""
+    let pricing = api.price;
+    let saleColor = "";
 
     if (api.onSale) {
         pricing = api.discountedPrice
@@ -25,7 +25,7 @@ export function createFeaturedHTML(api) {
                 </div>
             </div>
             <div class="featured-game-text gamecover-text">
-              <h1>${api.title}</h1>
+              <h1>${api.title.toUpperCase()}</h1>
               <p>${api.description}</p>
               <img class="video-placeholder" src="images/video-placeholder.png" alt="video player">
             </div> 

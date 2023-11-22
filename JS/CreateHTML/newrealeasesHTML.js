@@ -17,11 +17,14 @@ export function createNewReleasesHTML(api) {
         }
 
         newRealeasesHTML.innerHTML += `
-        <a href="/gamepage_placeholder.html?id=${api[i].id}">
-            <img src="${api[i].image}" alt="${api[i].title}">
-        </a>
+        <div class="new-game">
+          <a href="/gamepage_placeholder.html?id=${api[i].id}">
+              <img src="${api[i].image}" alt="${api[i].title}">
+          </a>
+        </div>
       `
-      } 
+      };
+      
     } catch (error) {
       newRealeasesHTML.innerHTML = errorMessage();
   }

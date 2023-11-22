@@ -13,15 +13,15 @@ const buttons = document.querySelectorAll(".cartbutton");
 if (currentHTML == "/games" || currentHTML == "/games.html"){
      createGamesHTML(dataAPI);
 
-     const cartButtons = document.querySelectorAll("#addCart");
+    //  const cartButtons = document.querySelectorAll("#addCart");
 
-     cartButtons.forEach((button) => {
-        button.addEventListener("click", addToLocalStorage);
-     });
+    //  cartButtons.forEach((button) => {
+    //     button.addEventListener("click", addToLocalStorage);
+    //  });
 
-    function addToLocalStorage() {
+    // function addToLocalStorage() {
         
-    }
+    // }
      
 };
 

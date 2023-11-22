@@ -7,18 +7,28 @@
 }
 
 .main-content- {
-    width: 50%;
-    min-height: 300px;
+    max-width: 80%;
+    width: 1140px;
     margin: 20px 0;
-    
+}
 
+.featured-content {
+    max-width: 80%;
+    width: 1000px;
+    padding-left: 70px;
 }
 
 .main-content- > h1 {
     text-align: start;
     font-size: 45px;
     font-weight: 700;
-    margin: 20px 0;
+    margin: 50px 0;
+    padding-left: 70px;
+}
+
+.main-content-box {
+    display: flex;
+
 }
 
 .sale-games, .new-games {
@@ -26,10 +36,11 @@
     flex-direction: row;
     flex-wrap: nowrap;
     /* Its suppose to scroll sideways with js*/
-    gap: 50px;
+    gap: 40px;
     justify-content: center;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
+    overflow-x: scroll;
     overflow-y: scroll;
 }
 
@@ -77,12 +88,13 @@
 }
 
 .featured-game-text h1 {
-    font-size: 37px;
+    font-size: 3rem;
+    line-height: 40px;
 }
 
 .featured-game-text p {
     font-size: 1.625em;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .featured-button {
@@ -97,56 +109,77 @@
     font-size: 28px;
 }
 
-.newgames-navigation {
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
+.arrow {
+    width: 60px;
+    height: 257px;
+    object-fit: contain;
+    background-color: rgba(35, 35, 35, 0.2);
 }
 
-.navigation-bar {
-    width: 70%;
-    height: 10px;
-    background: rgba(255, 255, 255, 0.188);
-    border-radius: 20px;
-    border: 1px solid #ffffff0e;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+.left-arrow {
+    transform: rotate(180deg);
 }
 
-.navigation-bar-inside {
-    height: 10px;
-    width: 20%;
-    background: #adadad;
-    border-radius: 0px 100px;
-    border: 1px solid rgba(255, 255, 255, 0.088)
+.button-left {
+    margin-right: 10px;
+}
+
+.button-right {
+    margin-left: 10px;
+}
+
+.right-arrow {
+}
+
+.noButtonStyling {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.scrollbutton-width {
+    width: 60px;
+    height: 257px;
 }
 
 @media (max-width: 1920px) {
     .sale-games, .new-games {
         justify-content: start;
     }
-    
+}
+
+@media (max-width: 776px) {
+    .featured-game-text {
+        display: none;
+    }
+
+    .gamecover-unit {
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 629px) {
-    .newgames-navigation {
-        display: none;
-        
-    }
-
-    .main-content- {
-        width: 80%;
-    }
 
     .main-content-:last-child {
         margin-bottom: 100px;
     }
+
+    .button-left, .button-right {
+        display: none;
+    }
+
+    .main-content- > h1 {
+        padding: 0;
+    }
+    
 }
 
-@media (max-width: 1507px) {
+/* @media (max-width: 1507px) {
     .video-placeholder {
         display: none;
     }
@@ -164,4 +197,4 @@
     .gamecover-unit {
         justify-content: center;
     }
-}
+} */

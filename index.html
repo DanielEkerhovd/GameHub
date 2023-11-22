@@ -14,7 +14,8 @@
     <script src="https://kit.fontawesome.com/7b521c5948.js" crossorigin="anonymous"></script>
     <title>GameHub - Home</title>
     <script defer type="module" src="script.js"></script>
-
+    <script defer type="module" src="JS/utils/scrollGames.js"></script>
+ 
     <!-- Hotjar Tracking Code for https://gamehub-del.netlify.app/ -->
   <script>
     (function(h,o,t,j,a,r){
@@ -71,15 +72,13 @@
       <div class="main-content">
         <div class="main-content-">
           <h1>SALE</h1>
-          <div class="sale-games">
-            <!-- Loading here or the whole page? -->
-            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-          </div>
-          
-          <div class="newgames-navigation">
-            <div class="navigation-bar">
-              <div class="navigation-bar-inside"></div>
+          <div class="main-content-box">
+            <button class="noButtonStyling scrollbutton-width button-left button-left-sale"><img class="arrow left-arrow" src="/Icons/arrow2.png" alt="left arrow"></button>
+            <div class="sale-games scrolling-images-sale">
+              <!-- Loading here or the whole page? -->
+              <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
             </div>
+            <button class="noButtonStyling scrollbutton-width button-right button-right-sale"><img class="arrow right-arrow" src="/Icons/arrow2.png" alt="left arrow"></button>
           </div>
         </div>
         <div class="main-content-">
@@ -91,13 +90,13 @@
         </div>
         <div class="main-content-">
           <h1>NEW RELEASES</h1>
-          <div class="new-games">
-            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-          </div>
-          <div class="newgames-navigation">
-            <div class="navigation-bar">
-              <div class="navigation-bar-inside"></div>
+          <div class="main-content-box">
+            <button class="noButtonStyling scrollbutton-width button-left button-left-release"><img class="arrow left-arrow" src="/Icons/arrow2.png" alt="left arrow"></button>
+            <div class="new-games scrolling-images-release">
+              <!-- Loading here or the whole page? -->
+              <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
             </div>
+            <button class="noButtonStyling scrollbutton-width button-right button-right-release"><img class="arrow right-arrow" src="/Icons/arrow2.png" alt="left arrow"></button>
           </div>
         </div>
       </div>

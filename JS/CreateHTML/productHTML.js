@@ -20,7 +20,7 @@ export function createProductHTML(api) {
 
   productHTML.innerHTML += `
   <div class="gamecover">
-          <img src="${api.image}" alt="${api.title}" class="game-gamecover">
+          <img src="${api.image}" alt="${api.title.toUpperCase()}" class="game-gamecover">
           <div class="game-button buttonstyle">
           <h2 class="${saleColor}">${pricing}$</h2>
           <button>Add to cart</button>
