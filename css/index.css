@@ -28,7 +28,16 @@
 
 .main-content-box {
     display: flex;
+    justify-content: center;
+    align-items: start;
+}
 
+.loading-height {
+    margin-top: 90px;
+}
+
+.loading-margin {
+    left: 44.5%;
 }
 
 .sale-games, .new-games {
