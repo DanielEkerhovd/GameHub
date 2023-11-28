@@ -1,4 +1,5 @@
 import { errorMessage } from "../utils/errorHandling.js";
+import { fetchCartItems } from "../utils/fetchCartItems.js";
 
 export const gamepageHTML = document.querySelector(".gamespage-content");
 
@@ -26,7 +27,7 @@ export function createGamesHTML(api) {
                                                 </a>
                                                 <div class="gp-button buttonstyle">
                                                     <h2 class="${saleColor}">${pricing}$</h2>
-                                                    <button type="button" class="cartButton" id="addCart">Add to cart</button>
+                                                    <button type="button" class="cartButton" data-id="${api[i].id}">Add to cart</button>
                                                 </div>
                                             </div>`
     }
@@ -37,7 +38,36 @@ export function createGamesHTML(api) {
     <div class="gp-placeholder">
     </div>`
 
+
+    const cartButtons = document.querySelectorAll(".gp-button button");
+
+
+    cartButtons.forEach((button) => {
+        button.addEventListener("click", addToCart);
+    });
+
+    function addToCart() {
+
+        let name = this.dataset.id;
+        let currentCart = fetchCartItems()
+        
+        const productIsInCart = currentCart.find((element) => {
+            return element === name;
+        });
+
+        if (productIsInCart === undefined) {
+            currentCart.push(name);
+            localStorage.setItem("products", JSON.stringify(currentCart));
+        }
+
+        console.log(currentCart);
+        
+    }
+
+
+
     } catch (error) {
         gamepageHTML.innerHTML = errorMessage("Couldn't load games");
     }
+
 };

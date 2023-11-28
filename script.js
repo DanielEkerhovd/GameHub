@@ -5,23 +5,17 @@ import { getID } from "./JS/utils/GetID.js";
 import { createFeaturedHTML, featuredGameHTML } from "./JS/CreateHTML/featuredHTML.js";
 import { createSaleGamesHTML, saleGamesHTML } from "./JS/CreateHTML/frontsaleHTML.js";
 import { createNewReleasesHTML, newRealeasesHTML } from "./JS/CreateHTML/newrealeasesHTML.js";
+import { productsInCart } from "./JS/utils/createCartObject.js";
+import { createCartHTML } from "./JS/CreateHTML/cartHTML.js";
+import { fetchCartItems } from "./JS/utils/fetchCartItems.js";
 
 const currentHTML = window.location.pathname; 
 
 const buttons = document.querySelectorAll(".cartbutton");
 
 if (currentHTML == "/games" || currentHTML == "/games.html"){
+
      createGamesHTML(dataAPI);
-
-    //  const cartButtons = document.querySelectorAll("#addCart");
-
-    //  cartButtons.forEach((button) => {
-    //     button.addEventListener("click", addToLocalStorage);
-    //  });
-
-    // function addToLocalStorage() {
-        
-    // }
      
 };
 
@@ -43,3 +37,9 @@ createNewReleasesHTML(dataAPI);
 
 };
 
+if (currentHTML == "/cart.html") {
+
+    createCartHTML(productsInCart)
+    
+
+};
