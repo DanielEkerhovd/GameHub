@@ -8,6 +8,9 @@ import { createNewReleasesHTML, newRealeasesHTML } from "./JS/CreateHTML/newreal
 import { productsInCart } from "./JS/utils/createCartObject.js";
 import { createCartHTML } from "./JS/CreateHTML/cartHTML.js";
 import { fetchCartItems } from "./JS/utils/fetchCartItems.js";
+import { updatePricing } from "./JS/CreateHTML/updatePricing.js";
+import { sumTotal } from "./JS/utils/sumTotal.js";
+import { checkOut } from "./JS/utils/checkout.js";
 
 const currentHTML = window.location.pathname; 
 
@@ -39,7 +42,9 @@ createNewReleasesHTML(dataAPI);
 
 if (currentHTML == "/cart.html") {
 
-    createCartHTML(productsInCart)
-    
+    createCartHTML(productsInCart);
+    const subTotal = sumTotal(productsInCart).toFixed(2);
+    updatePricing(subTotal);
+    checkOut();
 
 };
