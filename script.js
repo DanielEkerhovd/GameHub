@@ -40,7 +40,7 @@ createNewReleasesHTML(dataAPI);
 
 };
 
-if (currentHTML == "/cart.html") {
+if (currentHTML == "/cart.html" || currentHTML == "cart") {
 
     createCartHTML(productsInCart);
     const subTotal = sumTotal(productsInCart).toFixed(2);
