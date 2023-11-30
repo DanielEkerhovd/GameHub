@@ -43,6 +43,7 @@ createNewReleasesHTML(dataAPI);
 if (currentHTML == "/cart.html" || currentHTML == "/cart") {
 
     createCartHTML(productsInCart);
+    console.log("!!", productsInCart);
     const subTotal = sumTotal(productsInCart).toFixed(2);
     updatePricing(subTotal);
     checkOut();

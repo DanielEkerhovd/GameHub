@@ -14,10 +14,12 @@ export function createCartHTML(api) {
 
     if (fetchCart.length === 0) {
 
-            console.log("Nothing here");
-            cartHTML.innerHTML += `
-            <p>Nothing here yet!</p>
-            <a href="/games.html">Browse games</a>`
+        console.log("Nothing here");
+        cartHTML.innerHTML += `
+        <p>Nothing here yet!</p>
+        <a href="/games.html">Browse games</a>`
+
+        document.getElementById("checkoutButton").disabled = true;
     };
 
     for (let i = 0; i < api.length; i++) {

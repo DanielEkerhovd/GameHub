@@ -56,6 +56,10 @@
     font-size: 35px;
 }
 
+.remove-button {
+    cursor: pointer;
+}
+
 .remove-button button {
     background: none;
 	color: inherit;
@@ -160,13 +164,25 @@ span {
 }
 
 .checkout-button {
-}
-
-.checkout-button button {
     height: 50px;
     width: 150px;
-    font-size: 25px;
+    background: rgba(255, 255, 255, 0.188);
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border-radius: 0px 10.68px;
 }
+
+.cartbutton:hover  {
+    background-color: rgba(255, 255, 255, 0.374);
+}
+.cartbutton:active {
+    color: black;
+    background-color: white;
+} 
 
 @media (max-width: 629px) {
     .cart-text p:first-child {
