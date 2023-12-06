@@ -136,12 +136,6 @@ span {
     width: 500px;
 }
 
-input:focus {
-    outline-color: red;
-    outline-width: 40px;
-    border: 2px red solid;
-}
-
 .payment-cvc {
     flex: 2;
 }
@@ -181,6 +175,7 @@ input:focus {
 	cursor: pointer;
 	outline: inherit;
     border-radius: 0px 10.68px;
+    font-size: 25px;
 }
 
 .cartbutton:hover  {

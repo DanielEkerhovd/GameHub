@@ -170,9 +170,28 @@ header div, header nav {
     animation-fill-mode: none;
 }
 
-/* .cart-items:hover {
-    animation: growshrink 600ms ease normal both;
-} */
+.error-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.error-box i {
+    font-size: 30px;
+    color: red;
+}
+
+.error-message-pay {
+    font-size: 25px;
+}
+
+.error-border {
+    background-color: rgb(255, 168, 168);
+}
+
+.hide {
+    display: none;
+}
 
 
 
@@ -181,8 +200,7 @@ header div, header nav {
         display: none;
     }
     
-    .link-box {
-    }
+    
 
 }
 

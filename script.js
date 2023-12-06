@@ -10,8 +10,8 @@ import { createCartHTML } from "./JS/CreateHTML/cartHTML.js";
 import { fetchCartItems } from "./JS/utils/fetchCartItems.js";
 import { updatePricing } from "./JS/CreateHTML/updatePricing.js";
 import { sumTotal } from "./JS/utils/sumTotal.js";
-import { checkOut } from "./JS/utils/checkout.js";
 import { updateCart } from "./JS/utils/cartAmount.js";
+import { emptyCart } from "./JS/utils/emptyCart.js";
 
 const currentHTML = window.location.pathname; 
 
@@ -46,9 +46,10 @@ createNewReleasesHTML(dataAPI);
 if (currentHTML == "/cart.html" || currentHTML == "/cart") {
 
     createCartHTML(productsInCart);
-    console.log("!!", productsInCart);
     const subTotal = sumTotal(productsInCart).toFixed(2);
     updatePricing(subTotal);
-    checkOut();
-
 };
+
+if (currentHTML == "/cart_checkout.html" || "/cart_checkout") {
+    
+}
