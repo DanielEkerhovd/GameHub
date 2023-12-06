@@ -11,10 +11,13 @@ import { fetchCartItems } from "./JS/utils/fetchCartItems.js";
 import { updatePricing } from "./JS/CreateHTML/updatePricing.js";
 import { sumTotal } from "./JS/utils/sumTotal.js";
 import { checkOut } from "./JS/utils/checkout.js";
+import { updateCart } from "./JS/utils/cartAmount.js";
 
 const currentHTML = window.location.pathname; 
 
 const buttons = document.querySelectorAll(".cartbutton");
+
+updateCart();
 
 if (currentHTML == "/games" || currentHTML == "/games.html"){
 

@@ -1,5 +1,7 @@
 import { errorMessage } from "../utils/errorHandling.js";
 import { fetchCartItems } from "../utils/fetchCartItems.js";
+import { updateCart } from "../utils/cartAmount.js";
+import { cartAnimation } from "../utils/cartsAnimation.js";
 
 export const gamepageHTML = document.querySelector(".gamespage-content");
 
@@ -58,9 +60,12 @@ export function createGamesHTML(api) {
         if (productIsInCart === undefined) {
             currentCart.push(name);
             localStorage.setItem("products", JSON.stringify(currentCart));
+            cartAnimation();
+            console.log("cart");
         }
 
         console.log(currentCart);
+        updateCart();
         
     }
 
