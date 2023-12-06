@@ -3,9 +3,6 @@ import { fetchCartItems } from "./fetchCartItems.js";
 const cartDisplay = document.querySelector(".cart-items")
 const cartArea = document.getElementById("cart-items");
 
-cartArea.classList.add("remove");
-
-
 function checkCart () {
     const currentCart = fetchCartItems();
 
