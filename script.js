@@ -49,7 +49,3 @@ if (currentHTML == "/cart.html" || currentHTML == "/cart") {
     const subTotal = sumTotal(productsInCart).toFixed(2);
     updatePricing(subTotal);
 };
-
-if (currentHTML == "/cart_checkout.html" || "/cart_checkout") {
-    
-}
