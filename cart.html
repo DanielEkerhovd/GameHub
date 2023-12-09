@@ -14,7 +14,7 @@
       <script src="https://kit.fontawesome.com/7b521c5948.js" crossorigin="anonymous"></script>
       <script defer type="module" src="script.js"></script>
       <script defer type="module" src="JS/CreateHTML/updatePricing.js"></script>
-
+      <script defer type="module" src="JS/utils/formValidation.js"></script>
       <title>GameHub - Cart</title>
 
       <script>
@@ -86,19 +86,23 @@
             </div></a>
           </div>
           <p>OR</p>
-          <div class="payment-details">
+          <form class="payment-details" id="payment">
             <label for="card">Payment details</label>
-            <input type="text" name="card" id="card" placeholder="Card number" class="payment-card">
-            <input type="text" name="cardholder" id="cardholder" placeholder="Cardholder name" class="payment-name">
-            <input type="number" name="mm" id="mm" placeholder="MM" class="payment-mm">
-            <input type="number" name="yy" id="yy" placeholder="YY" class="payment-yy">
-            <input type="number" name="cvc" id="cvc" placeholder="CVC" class="payment-cvc">
-          </div>
-          <form class="checkout">
+            <div class="error-box">
+              <p class="error-message-pay"></p>
+              <i class="fa-regular fa-circle-xmark remove" id="error-icon"></i>
+            </div>
+            
+            <input type="tel" name="card" id="card" placeholder="Card number" class="payment-card" maxlength="19" >
+            <input type="text" name="cardholder" id="cardholder" placeholder="Cardholder name" class="payment-name" >
+            <input type="tel" name="mm" id="mm" placeholder="MM" class="payment-mm" maxlength="2" >
+            <p class="centerIt slash">/</p>
+            <input type="tel" name="yy" id="yy" placeholder="YY" class="payment-yy" maxlength="2" >
+            <input type="tel" name="cvc" id="cvc" placeholder="CVC" class="payment-cvc" maxlength="3" >
             <div class="cart-total">
               <p>Subtotal: <span class="total-pricing"></span></p>
             </div>
-            <button type="submit" formaction="/cart_checkout.html" class="checkout-button cartbutton" id="checkoutButton">Checkout</button>
+            <button type="submit" class="checkout-button cartbutton" id="checkoutButton">Checkout</button>
           </form>
         </div>
       </div>
