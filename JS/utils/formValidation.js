@@ -1,4 +1,4 @@
-
+import { emptyCart } from "./emptyCart.js";
 const errorMessage = document.querySelector(".error-message-pay");
 const errorIcon = document.getElementById("error-icon");
 
@@ -29,7 +29,7 @@ function checkForm(event) {
         errorText.push("Invalid Card number")
 
         errorStatus = true;
-        event.preventDefault();
+        // event.preventDefault();
     }
 
     if (month.value > 12 || month.value < 1 || month.value.length != 2) {
@@ -39,7 +39,7 @@ function checkForm(event) {
         errorText.push("Invalid month")
 
         errorStatus = true;
-        event.preventDefault();
+        // event.preventDefault();
     }
 
     if (year.value < 23 || year.value.length !=2) {
@@ -49,7 +49,7 @@ function checkForm(event) {
         errorText.push("Invalid year")
 
         errorStatus = true;
-        event.preventDefault();
+        // event.preventDefault();
     }
 
     if (cvc.value.length != 3) {
@@ -59,9 +59,14 @@ function checkForm(event) {
         errorText.push("Invalid CVC")
 
         errorStatus = true;
-        event.preventDefault();
+        // event.preventDefault();
     }
 
-    errorMessage.innerText = errorText[0];
-
+    if (errorStatus) {
+        errorMessage.innerText = errorText[0];
+        event.preventDefault()
+    } else {
+        emptyCart();
+    }
+    
 }
