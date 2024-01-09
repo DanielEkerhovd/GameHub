@@ -14,7 +14,6 @@ export function createCartHTML(api) {
 
     if (fetchCart.length === 0) {
 
-        console.log("Nothing here");
         cartHTML.innerHTML += `
         <p>Nothing here yet!</p>
         <a href="/games.html">Browse games</a>`
@@ -24,16 +23,22 @@ export function createCartHTML(api) {
 
     for (let i = 0; i < api.length; i++) {
 
-        let pricing = api[i].price
+        let pricing = api[i].prices.regular_price / 100;
 
         if (api[i].onSale) {
-          pricing = api[i].discountedPrice
+          pricing = api[i].prices.sale_price / 100;
+        }
+
+        let image = "Icons/close.png"
+        
+        if (api[i].images.length >= 1) {;
+            image = api[i].images[0].src
         }
         
         cartHTML.innerHTML += `  <div class="cart-games">
-                                        <img src="${api[i].image}" alt="${api[i].title}">
+                                        <img src="${image}" alt="${api[i].name}">
                                         <div class="cart-text">
-                                        <p>${api[i].title.toUpperCase()}</p>
+                                        <p>${api[i].name.toUpperCase()}</p>
                                         <p>${pricing}$</p>
                                         <div class="remove-button"><i class="fa-regular fa-square-minus fa-xl" data-id="${api[i].id}" style="color: #ffffff;"></i></div>
                                         </div>

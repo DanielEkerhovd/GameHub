@@ -5,6 +5,7 @@ import { cartAnimation } from "../utils/cartsAnimation.js";
 
 export const gamepageHTML = document.querySelector(".gamespage-content");
 
+
 export function createGamesHTML(api) {
 
     try {
@@ -13,22 +14,26 @@ export function createGamesHTML(api) {
 
     for (let i = 0; i < api.length; i++) {
 
-        let pricing = api[i].price
+        let pricing = api[i].prices.price / 100;
         let saleColor = ""
 
-        if (api[i].onSale) {
-            pricing = api[i].discountedPrice
+        if (api[i].on_sale) {
+            pricing = api[i].prices.sale_price / 100;
             saleColor = "onSale";
         }
 
+        let image = "Icons/close.png"
 
+        if (api[i].images.length >= 1) {;
+            image = api[i].images[0].src
+        }
 
         gamepageHTML.innerHTML += `  <div class="gp-games">
                                                 <a href="/gamepage_placeholder.html?id=${api[i].id}">
-                                                    <img src="${api[i].image}" alt="${api[i].title}">
+                                                    <img src="${image}" alt="${api[i].name}">
                                                 </a>
                                                 <div class="gp-button buttonstyle">
-                                                    <h2 class="${saleColor}">${pricing}$</h2>
+                                                    <h2 class="${saleColor}">${pricing}${api[i].prices.currency_symbol}</h2>
                                                     <button type="button" class="cartButton" data-id="${api[i].id}">Add to cart</button>
                                                 </div>
                                             </div>`

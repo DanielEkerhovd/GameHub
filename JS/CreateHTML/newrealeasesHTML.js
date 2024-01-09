@@ -10,16 +10,22 @@ export function createNewReleasesHTML(api) {
     for (let i = 0; i < api.length; i++) {
 
         //Removes items realeased before 2008
-        let newReleaseCap = "2007"
+        // let newReleaseCap = "2007"
 
-        if (api[i].released <= newReleaseCap) {
-          continue;
+        // if (api[i].released <= newReleaseCap) {
+        //   continue;
+        // }
+
+        let image = "Icons/close.png"
+        
+        if (api[i].images.length >= 1) {;
+            image = api[i].images[0].src
         }
 
         newRealeasesHTML.innerHTML += `
         <div class="new-game">
           <a href="/gamepage_placeholder.html?id=${api[i].id}">
-              <img src="${api[i].image}" alt="${api[i].title}">
+              <img src="${image}" alt="${api[i].title}">
           </a>
         </div>
       `
