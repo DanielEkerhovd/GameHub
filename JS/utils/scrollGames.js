@@ -5,18 +5,7 @@ const buttonRightSale = document.querySelector(".button-right-sale");
 const buttonLeftRelease = document.querySelector(".button-left-release");
 const buttonRightRelease = document.querySelector(".button-right-release");
 
-// function checkScroll() {
-//     const currentScroll = scrollingImages.scrollLeft;
-//     console.log(currentScroll);
-//     if (currentScroll === 0) {
-//         // buttonLeft.setAttribute("disabled", "true");
-//         // buttonLeft.style.display = "none";
-//     }
-//     if (!currentScroll === 0) {
-//         buttonLeft.removeAttribute("disabled", "false");
-//         buttonLeft.style.display = "block";
-//     }
-// }
+
 
 function leftScrollSale() {
 
