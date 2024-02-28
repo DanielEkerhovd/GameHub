@@ -1,6 +1,6 @@
 # THE BREWERY
 
-![image](/media/images/gamehub-logo.png)
+![image](/images/gamehub-logo.png)
 
 An online webshop for videogames.
 
