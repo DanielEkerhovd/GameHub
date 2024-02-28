@@ -1,4 +1,4 @@
-# THE BREWERY
+# GAMEHUB
 
 ![image](/images/gamehub-logo.png)
 
